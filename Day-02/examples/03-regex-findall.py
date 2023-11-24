@@ -3,8 +3,8 @@ import re
 text = "The quick brown fox"
 pattern = r"brown"
 
-search = re.search(pattern, text)
-if search:
-    print("Pattern found:", search.group())
+findall = re.findall(pattern, text)
+if findall:
+    print("Pattern found:", findall)
 else:
     print("Pattern not found")
